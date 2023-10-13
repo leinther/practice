@@ -8,4 +8,4 @@ def rob(nums):
         M = M[1], max(nums[i]+M[0], M[1])
     return M[1]
 
-print (rob(nums = [2,7,9,3,1]))
+print (rob(nums = [2,3,2]))
