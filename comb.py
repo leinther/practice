@@ -19,4 +19,4 @@ def comb (nums):
     return ans
     
     
-print(comb([1,2,3]))
+print(comb([1,2,3,4]))
