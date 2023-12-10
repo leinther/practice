@@ -1,11 +1,9 @@
 def rob(nums):
-    if len(nums) < 3: return max(nums)
-    # M(emory) stores maximum money until last two points
-    M = nums[0], max(nums[0], nums[1])
-    # We iterate M until we get the max money in the last house
-    for i in range(2, len(nums)):
-        # Only store last two points to save memory
-        M = M[1], max(nums[i]+M[0], M[1])
-    return M[1]
-
-print (rob(nums = [2,3,2]))
+    d1 = nums[0]
+    d2 = max(nums [1],nums[0])
+    for i in range (2,len(nums)):
+        temp = d1+nums[i]
+        d1 = max(d2,d1)
+        d2 = temp
+    return max(d2,d1)
+print (rob(nums = [1,2]))

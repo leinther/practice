@@ -15,4 +15,4 @@ def searchInsert(nums, target):
     print(search(low = 0,high = len(nums)-1))
     
     
-print (searchInsert(nums = [-1,0,3,5,9,12], target = 9))
+print (searchInsert(nums = [1,3,5,7], target = 0))
